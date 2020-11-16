@@ -11,10 +11,12 @@ public class Bike {
     }
 
     public int getBikeID() {
+
         return bikeID;
     }
 
     public void setBikeID(int bikeID) {
+
         this.bikeID = bikeID;
     }
 
@@ -23,13 +25,14 @@ public class Bike {
     }
 
     public void setColor(String color) {
+
         this.color = color;
     }
 
     @Override
     public String toString() {
         return  
-                "bikeID=" + bikeID +
-                ", color='" + color ;
+                "bikeID: " + bikeID +
+                ", color: " + color ;
     }
 }
