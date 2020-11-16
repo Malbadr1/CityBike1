@@ -21,11 +21,11 @@ public class User {
             currentlyRentedBikes.add(bike);
             station.getBikesInStation().remove(bike);
 
-            System.out.println(this.name + " "+this.surname+ " is now renting bike ID "+bike.getBikeID()+ " from station "+ station.getLocation() );
+            System.out.println(name + "\t"+surname+ " is now renting bike ID "+bike.getBikeID()+ " from station "+ station.getLocation() );
 
         }
         else{
-            System.out.println("Bike does not exist in this station");
+            System.out.println("Bike doesn't exist in the station");
         }
     }
 
@@ -37,11 +37,11 @@ public class User {
 
             if (isSucess==true) {
                 currentlyRentedBikes.remove(bike);
-                System.out.println(this.name + " " + this.surname + " returned bike ID " + bike.getBikeID() + " to station " + station.getLocation());
+                System.out.println(name + "\t" + surname + " returned bike ID " + bike.getBikeID() + " to station " + station.getLocation());
             }
             else{
 
-                System.out.println("User "+this.name+ " "+this.surname+" is trying to return bike in full station");
+                System.out.println("User "+name+ " "+surname+" is trying to return bike in full station");
             }
         }
         else{

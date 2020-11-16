@@ -46,6 +46,7 @@ public class Station {
     }
 
     public void setBikesInStation(ArrayList<Bike> bikesInStation) {
+
         this.bikesInStation = bikesInStation;
     }
 
